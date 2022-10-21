@@ -1,0 +1,42 @@
+.f-fl {
+  float: left;
+  &:hover {
+    color: green;
+  }
+}
+
+.f-fr {
+  float: right;
+  &:hover {
+    color: green;
+  }
+}
+
+.f-cf {
+  
+  &::after {
+    content: '';
+    display:block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}
+
+.f-footer {
+  text-align: center;
+  margin: 0,auto;
+  // width: 700px;
+  box-sizing: border-box;
+  .nav-icn {
+    // margin-right: 15px;
+    line-height: 24px;
+    &:hover {
+      color: blue;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+};
+  

@@ -1,0 +1,18 @@
+<div class="project-card project-card-continuous">
+  <% if (post.photos[0]) { %>
+    <div class="imgWrap">
+      <img src="<%= post.photos[0] %>" alt="" />
+    </div>
+    <!-- TODO: 这里尝试调用第三方接口 可以在配置中 设置第三方的随机图接口 -->
+  <% } else { %>
+    <div class="imgWrap">
+      <img src="<%= url_for('https://api.reidosann.top/desktop/images') %>" alt="" />
+    </div>
+    <% } %>
+   
+  <div class="ctnWrap">
+    <a href="<%- url_for(post.path) %>" class="title"><%= post.title %></a>
+    <section class="desc"><%- partial('excerpt', { post: post }) %></section>
+    <p class="sub"><%- date(post.date, 'MMM D, YYYY') %></p>
+  </div>
+</div>
