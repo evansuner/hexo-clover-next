@@ -2,7 +2,7 @@
 nav:
   title: "Evan's Blog"
 
-favicon: ""
+favicon: "/source/images/favicon.ico"
 
 # Custom background
 background:

@@ -10,6 +10,7 @@
   box-shadow: #666 1px 1px 5px -3px;
   &:hover{
     box-shadow: #666 0px 1px 20px -6px;
+    transition: box-shadow 0.5s ease-in-out;
   }
   > .imgWrap {
     width: 320px;
@@ -20,6 +21,9 @@
       height: auto;
       display: block;
       border-radius: 10px;
+      // &:hover {
+      //   transition: color .2s ease-out,border .2s ease-out,opacity .2s ease-out;
+      // }
     }
   }
   > .ctnWrap {
@@ -32,6 +36,7 @@
       &:hover {
         opacity: 1;
         color: #f0534e;
+        transition: color .3s ease-out,border .3s ease-out,opacity .3s ease-out;
       }
     }
     > .desc {

@@ -6,6 +6,12 @@ var _ = require("lodash");
 hexo.extend.filter.register("template_locals", (locals) => {
   locals._ = _;
 });
+hexo.extend.filter.register("markdown-it:renderer", function (md) {
+  const { config } = this; // Optional, parse user config from _config.yml
+  md.validateLink = function () {
+    return true;
+  };
+});
 hexo.config.index_generator = assign(
   {
     per_page:
