@@ -1,18 +1,16 @@
 <footer id="footer" class="f-footer">
-  <%= theme.mail %>
-  <% if (theme.social) { %>
-    <% _.forEach(theme.social, function(value, key) { %>
-      <% if (value) { %>
-        · <a href="<%= url_for(value) %>" target="_blank" class="nav-icn"><%= key %></a>
-      <% } %>
-    <% }); %>
-  <% } %>
-  <br>
+  <%= theme.mail %> <% if (theme.social) { %> <% _.forEach(theme.social,
+  function(value, key) { %> <% if (value) { %> ·
+  <a href="<%= url_for(value) %>" target="_blank" class="nav-icn"><%= key %></a>
+  <% } %> <% }); %> <% } %>
+  <br />
   <span class="copyright"><%= theme.copyright %></span>
-  <br>
+  <br />
   <span class="beian">
     <% if (theme.beian.enable) { %>
-      <a href="<%= url_for('https://beian.miit.gov.cn') %> " class="nav-icn"><%= theme.beian.icp %> </a>
+    <a href="<%= url_for('https://beian.miit.gov.cn') %> " class="nav-icn"
+      ><%= theme.beian.icp %>
+    </a>
     <% } %>
   </span>
 </footer>
