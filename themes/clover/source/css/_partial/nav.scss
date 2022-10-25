@@ -17,9 +17,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    // justify-content: space-around;
     > .menu {
       // min-width: 320px;
-      text-align: right;
+      // text-align: right;
+      text-align: left;
     }
     @media screen and (max-width: 600px){
       flex-direction: column;

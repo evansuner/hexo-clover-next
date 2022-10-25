@@ -16,8 +16,8 @@ social:
   # Lofter: http://clovertuan.lofter.com/
   # Instagram: https://www.instagram.com/clovertuan/
   GitHub: https://github.com/evansuner
-  Netease: https://music.163.com/#/user?id=113874197
-  Gitee: https://gitee.com/evansuner
+  # Netease: https://music.163.com/#/user?id=113874197
+  # Gitee: https://gitee.com/evansuner
 
 # Custom footer
 mail: reidosann@163.com
@@ -34,14 +34,15 @@ menu:
   #   path: /tags/Stuffs
   #   card: article-card
   Home: /
-  Archive: /archives
-  About: /about
+  Archive: archives
+  About: about
+  Search: search
 
 # Specific default categories or tags of home page.
 # Post which belongs to `category` or `tag` and don't belongs to `except_category` or `except_tag` will be filtered.
 home:
   # set card style of home page
-  # category: Projects
+  # category: python
   # tag: 算法
   # except_category: 树
   # except_tag:
@@ -69,7 +70,12 @@ beian:
   enable: true
   icp: 皖ICP备2021006467号-2
 
-# search
-search:
-  path: search.xml
-  field: post
+# Search
+# search:
+#   path: search.xml
+#   field: post
+local_search:
+  enable: true
+  labels:
+    input_placeholder: Search for Posts
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result

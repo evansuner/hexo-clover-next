@@ -132,3 +132,10 @@ markdown:
     lazyload: false
     prepend_root: false
     post_asset: false
+
+# local search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
